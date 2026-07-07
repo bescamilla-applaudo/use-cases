@@ -1,0 +1,69 @@
+{
+  "id": 1,
+  "name": "Sereno",
+  "idea": "Sereno is a gentle habit and recovery companion for remote knowledge workers at risk of burnout. It blends short science-based micro-habits (movement, light exposure, focus blocks, wind-down routines) with an AI coach that adapts the daily plan to the user's calendar load and self-reported energy — nudging without nagging, and measuring recovery instead of streaks.",
+  "ai_assisted": [
+    "pain_points",
+    "target_users",
+    "objectives",
+    "kpis"
+  ],
+  "problem": "Remote workers stack back-to-back video calls with no natural breaks, and existing habit apps make it worse by punishing broken streaks and ignoring context. People don't need another gamified checklist; they need a plan that shrinks on heavy days, grows on light ones, and treats rest as progress — otherwise they abandon the app within two weeks and keep sliding toward burnout.",
+  "company_context": "We are a husband-and-wife team: a former occupational-health physician who spent a decade running corporate wellness programs, and a mobile engineer who shipped two top-100 productivity apps. After the physician's own burnout leave in 2024, we started building Sereno around the clinical recovery protocols she used with patients — turned into something people can actually follow between meetings.",
+  "pain_points": [
+    "Habit apps punish broken streaks, which demotivates exactly the people who need them most",
+    "Daily plans ignore real calendar load, so busy days make the app feel naive and heavy days get skipped entirely",
+    "Wellness advice is generic and not grounded in the user's actual energy and recovery signals"
+  ],
+  "target_users": [
+    {
+      "label": "Remote Knowledge Workers",
+      "description": "Individual contributors and managers working 6+ hours/day on video calls who feel early burnout symptoms but won't book a clinic visit"
+    },
+    {
+      "label": "People-Ops / Wellness Leads",
+      "description": "HR and people-operations leads at 50-500 person remote companies looking for a wellness benefit employees will actually keep using"
+    }
+  ],
+  "objectives": [
+    "Reach 8-week retention above 40% (vs the ~10% habit-app norm)",
+    "Show a measurable drop in self-reported exhaustion within 4 weeks of use",
+    "Land 20 company wellness-benefit pilots in the first year"
+  ],
+  "kpis": [
+    {
+      "name": "8-Week Retention",
+      "target": "40% by month 6"
+    },
+    {
+      "name": "Weekly Active Recovery Sessions",
+      "target": "4+ per active user by month 3"
+    },
+    {
+      "name": "Company Pilot Conversions",
+      "target": "20 pilots, 8 paid by month 12"
+    }
+  ],
+  "audience": {
+    "validation_level": "A Balanced Mix",
+    "notes": "Clinical experience from a decade of corporate wellness programs, plus 60 user interviews with remote workers; retention benchmarks from published habit-app research."
+  },
+  "competitive_landscape": "Headspace and Calm own meditation but not adaptive daily planning; Fabulous and Habitica are streak-driven gamification (the exact pattern we reject); corporate platforms like Wellhub aggregate gyms rather than build daily behavior. Nobody adapts the plan to calendar load — that context-awareness is the differentiator.",
+  "business_constraints": "Health-adjacent but NOT a medical device — copy must avoid diagnostic claims (regulatory line). Two-person team; mobile-first (iOS first, Android in month 4). B2C subscription plus B2B pilot pricing; calendar integration limited to read-only Google/Microsoft OAuth scopes.",
+  "brand": {
+    "logo_usage": "Use the rounded hexagonal S mark generously padded on soft backgrounds for app icon and onboarding; in-app headers use it small and quiet in a corner — the interface should breathe, the logo should never shout.",
+    "primary_typography": "Playfair Display",
+    "secondary_typography": "Nunito",
+    "primary_color": "7A8B6F",
+    "secondary_colors": [
+      "E8A87C",
+      "8B85C1"
+    ],
+    "brand_voice": "Warm, calm, and permission-giving — like a good physiotherapist: encouraging without cheerleading, honest about setbacks, never guilt-tripping. Rest days are framed as progress.",
+    "design_notes": "Soft organic pastels (sage, peach, lavender) on warm off-white; rounded corners everywhere, botanical illustration accents, no red anywhere in the palette. Progress is shown as gentle fills, never as breakable streaks or alarms."
+  },
+  "assets": {
+    "logo": "assets/logo-1.png",
+    "moodboard": "assets/moodboard-1.png"
+  }
+}

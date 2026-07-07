@@ -1,0 +1,75 @@
+{
+  "id": 2,
+  "name": "PulseGrid",
+  "idea": "PulseGrid is a real-time incident copilot for on-call engineering teams. It ingests alerts from monitoring stacks (Prometheus, Datadog, CloudWatch), correlates them into a single probable-cause timeline using an AI triage engine, and drafts the first responder actions — the status-page update, the rollback command, the stakeholder ping — so the engineer who gets paged at 3am starts from a hypothesis instead of from twelve dashboards.",
+  "ai_assisted": [
+    "pain_points",
+    "target_users",
+    "objectives",
+    "kpis"
+  ],
+  "problem": "When production breaks, on-call engineers lose the first 20-40 minutes to orientation: which of the 47 firing alerts is the root cause, what changed recently, who needs to know. Runbooks are stale, tribal knowledge lives in the heads of two senior engineers, and every minute of confused triage is a minute of user-facing downtime. Post-incident, nobody has time to write the timeline, so the same incident repeats a quarter later.",
+  "company_context": "We are four ex-SRE leads from two different unicorn-scale infrastructure teams. Between us we have carried a pager for 30+ combined years and run hundreds of production incidents. We kept rebuilding the same internal triage tooling at every company we joined — PulseGrid is that tooling built once, properly, as a product.",
+  "pain_points": [
+    "Alert storms bury the root cause under dozens of downstream symptom alerts",
+    "The first 20-40 minutes of every incident are lost to orientation across disconnected dashboards",
+    "Runbooks are stale and tribal knowledge is concentrated in a few senior engineers",
+    "Post-incident timelines and reviews rarely get written, so incidents repeat",
+    "Status-page and stakeholder communication lags far behind what responders already know"
+  ],
+  "target_users": [
+    {
+      "label": "On-Call SREs / Platform Engineers",
+      "description": "Engineers on rotation at companies running 50+ production services who get paged and need a probable cause fast"
+    },
+    {
+      "label": "Engineering Managers of Infra Teams",
+      "description": "EMs accountable for MTTR and incident-review quality who need visibility without hovering in the incident channel"
+    },
+    {
+      "label": "Incident Commanders",
+      "description": "Senior responders who coordinate large incidents and need one shared timeline instead of six Slack threads"
+    }
+  ],
+  "objectives": [
+    "Cut mean time to probable-cause identification by half for design-partner teams",
+    "Auto-draft a usable incident timeline for 90% of incidents with zero manual note-taking",
+    "Become the pager-to-postmortem system of record for 50 engineering teams in year one"
+  ],
+  "kpis": [
+    {
+      "name": "Time to Probable Cause",
+      "target": "50% reduction vs baseline by month 4"
+    },
+    {
+      "name": "Incidents with Auto-Generated Timeline",
+      "target": "90% by month 6"
+    },
+    {
+      "name": "Design-Partner Teams Retained",
+      "target": "50 teams by month 12"
+    }
+  ],
+  "audience": {
+    "validation_level": "Direct Conversations",
+    "notes": "Founders are the target user — 30+ combined years on-call — plus 40 discovery interviews with SREs at design-partner candidates."
+  },
+  "competitive_landscape": "PagerDuty and Opsgenie own paging but stop at notification; incident.io and FireHydrant structure the process but don't do causal triage; Datadog's correlation stays inside its own ecosystem. The wedge is cross-stack probable-cause correlation plus drafted responder actions — the 3am cold-start problem nobody owns end to end.",
+  "business_constraints": "Must be read-only against production systems at launch (no auto-remediation — trust barrier). SOC 2 Type I required before first paid contract; self-hosted agent option for regulated design partners. Four engineers; integrations capped at Prometheus, Datadog, CloudWatch, and Slack for the first two quarters.",
+  "brand": {
+    "logo_usage": "Use the four-point compass mark in cyan or white on dark surfaces for the app shell and CLI splash; monochrome variant for terminal output and favicons. Never place the mark on light backgrounds in-product — the product lives in dark mode.",
+    "primary_typography": "Montserrat",
+    "secondary_typography": "Source Sans Pro",
+    "primary_color": "6C5CE7",
+    "secondary_colors": [
+      "00E0FF",
+      "0A0E14"
+    ],
+    "brand_voice": "Precise, calm under pressure, zero drama — like the best incident commander you've worked with: short declarative sentences, exact timestamps, confidence levels stated explicitly, never speculation dressed as fact.",
+    "design_notes": "Dark-mode-first (near-black #0A0E14 surfaces), electric cyan and violet as signal colors only — color means state, never decoration. Dense information design: timelines, monospace log excerpts, confidence badges. Feels like a professional flight deck, not a consumer dashboard."
+  },
+  "assets": {
+    "logo": "assets/logo-2.png",
+    "moodboard": "assets/moodboard-2.png"
+  }
+}

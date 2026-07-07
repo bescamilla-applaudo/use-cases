@@ -1,0 +1,70 @@
+{
+  "id": 0,
+  "name": "LoopTrack",
+  "idea": "LoopTrack is a returns and reverse-logistics management platform for small and mid-size e-commerce brands. It centralizes return requests, automates carrier label generation and refund approval rules, and turns every returned item into a tracked asset that is inspected, restocked, refurbished, or written off — so brands stop losing margin to a returns process handled over email and spreadsheets.",
+  "ai_assisted": [
+    "pain_points",
+    "target_users",
+    "objectives",
+    "kpis"
+  ],
+  "problem": "E-commerce brands under ~$20M revenue handle product returns through shared inboxes, carrier portals, and spreadsheets. Nobody can see where a returned item physically is, refunds get issued before items are inspected, and resellable inventory sits in cardboard boxes for weeks. The result is double-digit margin leakage on every return cycle and support teams drowning in 'where is my refund?' tickets.",
+  "company_context": "We are a three-person team that spun out of a 3PL warehouse operator. Two of us ran the returns dock for fashion and electronics clients for five years; the third built the warehouse's internal tooling. We watched dozens of brands lose money on returns because their 'process' was a shared inbox and a spreadsheet, and we are building LoopTrack as the system we always wished our clients had.",
+  "pain_points": [
+    "Return requests arrive through email and marketplace portals and get tracked by hand in spreadsheets",
+    "Refunds are issued before the returned item is inspected, so damaged or wrong items still get refunded",
+    "Resellable returned inventory sits unprocessed for weeks and misses its sales window",
+    "No visibility into where a returned item physically is between the customer and the warehouse shelf"
+  ],
+  "target_users": [
+    {
+      "label": "E-commerce Operations Managers",
+      "description": "Ops leads at direct-to-consumer brands doing 500-5,000 orders/month who own the returns process end to end without dedicated tooling"
+    },
+    {
+      "label": "3PL Returns Supervisors",
+      "description": "Warehouse-side supervisors who receive, inspect, and disposition returned items for multiple brand clients"
+    }
+  ],
+  "objectives": [
+    "Cut refund-before-inspection losses to near zero within the first quarter of adoption",
+    "Reduce average return-to-restock time from weeks to under 5 business days",
+    "Give brands a single tracked timeline for every returned item"
+  ],
+  "kpis": [
+    {
+      "name": "Return-to-Restock Time",
+      "target": "Under 5 business days by month 3"
+    },
+    {
+      "name": "Refund-Before-Inspection Rate",
+      "target": "Below 2% by month 3"
+    },
+    {
+      "name": "Returns Handled Per Ops FTE",
+      "target": "3x baseline by month 6"
+    }
+  ],
+  "audience": {
+    "validation_level": "Direct Conversations",
+    "notes": "Founders ran a 3PL returns dock for five years and speak with brand ops managers weekly."
+  },
+  "competitive_landscape": "Loop Returns and Happy Returns dominate the enterprise/Shopify-Plus tier; AfterShip Returns covers label generation but not warehouse-side disposition. Nobody serves the sub-$20M brand + independent 3PL pair as one shared workflow — that two-sided workflow is the wedge.",
+  "business_constraints": "Bootstrapped; must integrate with Shopify and ShipStation at launch (no custom EDI). Two engineers; warehouse-side UI must work on rugged Android scanners. Target price point under $500/month for brands.",
+  "brand": {
+    "logo_usage": "Use the full triangular loop mark on light backgrounds for dashboard headers and reports; reserve the compact single-color variant for favicons, scanner-app icons, and shipping-label corners.",
+    "primary_typography": "Inter",
+    "secondary_typography": "Open Sans",
+    "primary_color": "1D4ED8",
+    "secondary_colors": [
+      "0A1240",
+      "E8EDFF"
+    ],
+    "brand_voice": "Operational and direct — speaks like a seasoned warehouse lead: concrete numbers, no fluff, every claim tied to a step a user can act on.",
+    "design_notes": "Clean corporate-blue design system: high-contrast navy on light surfaces, generous whitespace, data-dense tables with clear status chips. The interface should feel like reliable logistics software, not a marketing site."
+  },
+  "assets": {
+    "logo": "assets/logo-0.png",
+    "moodboard": "assets/moodboard-0.png"
+  }
+}
